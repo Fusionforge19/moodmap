@@ -62,17 +62,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 > ```
 
-## 📸 Screenshots
-
-<div align="center">
-  <img src="src/assets/hero.png" alt="moodmap mood input screen" width="800" />
-  <p><em>mood input + ambient mood state</em></p>
-
-  <img src="src/assets/hero.png" alt="moodmap generated mood result" width="800" />
-  <p><em>generated reflection with music match</em></p>
-</div>
-
-## 🗂️ Project Structure
+## ️ Project Structure
 
 ```
 src/
