@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
@@ -15,7 +15,7 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the Oxlint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-=======
+
 # moodmap
 An emotion-driven ambient companion — describe how you feel and get an AI-generated mood reflection, dynamic color palette, and a real matching song, powered by Gemini + iTunes.
->>>>>>> 6b51a74bfc28cd6ceb8b24e9dceecc85bfb9d281
+
