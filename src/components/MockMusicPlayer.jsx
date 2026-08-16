@@ -41,7 +41,8 @@ export default function MockMusicPlayer({
   }, [selectedTrack?.previewUrl, moodData?.music_vibe_name]);
 
   const togglePlay = () => {
-    if (!audioRef.current || !selectedTrack?.previewUrl) return;
+    const hasPreviewUrl = Boolean(selectedTrack?.previewUrl);
+    if (!audioRef.current || !hasPreviewUrl) return;
 
     if (isPlaying) {
       audioRef.current.pause();

@@ -56,14 +56,16 @@ async function doSearch(term) {
     if (!res.ok) return [];
     const data = await res.json();
 
-    const rawList = (data?.results || []).map((r) => ({
-      trackId: r.trackId || Math.random(),
-      songTitle: r.trackName,
-      songArtist: r.artistName,
-      previewUrl: r.previewUrl,
-      artworkUrl: r.artworkUrl100 || r.artworkUrl60,
-      albumName: r.collectionName,
-    }));
+    const rawList = (data?.results || [])
+      .map((r) => ({
+        trackId: r.trackId || Math.random(),
+        songTitle: r.trackName,
+        songArtist: r.artistName,
+        previewUrl: r.previewUrl,
+        artworkUrl: r.artworkUrl100 || r.artworkUrl60,
+        albumName: r.collectionName,
+      }))
+      .filter((track) => typeof track.previewUrl === 'string' && track.previewUrl.trim().length > 0);
 
     // Apply content safety filter first
     const safeList = rawList.filter((t) => !isOffensive(t));
